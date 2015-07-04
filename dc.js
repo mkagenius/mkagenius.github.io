@@ -160,6 +160,17 @@
 		if(!gameOver)
 			updateScore();
 	}
+	function restart() {
+		gameOver = false;
+		timerRunning = false;
+		$("#timesup").addClass("invisible");
+		$("#exceeded8").addClass("invisible");
+		$("#restart").addClass("invisible");
+		$("#curScore").text(0);
+		$("#time").text(60);
+		$("#ltext").text(0);
+		$("#rtext").text(0);
+	}
 	$("body").on("keydown", function(event) { 
 		if(!gameOver) {
 			console.log(event.which);
@@ -180,20 +191,14 @@
 
 			}
 		}
+		if(event.which == 32) {
+			restart();
+		}
 
 	});
 
 	$("#restart").on('click', function() {
-		gameOver = false;
-		timerRunning = false;
-		$("#timesup").addClass("invisible");
-		$("#exceeded8").addClass("invisible");
-		$("#restart").addClass("invisible");
-		$("#curScore").text(0);
-		$("#time").text(60);
-		$("#ltext").text(0);
-		$("#rtext").text(0);
-
+		restart();
 
 	})
 
