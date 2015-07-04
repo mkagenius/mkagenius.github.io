@@ -92,8 +92,7 @@
 			$("#restart").removeClass("invisible");
 			$.ajax({
 			  method: "GET",
-			  url: "/sendGame?data=".concat(userInputs.toString()),
-			  contentType: 'application/json',
+			  url: "/sendGame?data=".concat(userInputs.toString())
 			})
 			  .done(function( msg ) {
 			  	console.log("Game result saved hopefully");
