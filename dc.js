@@ -5,7 +5,7 @@
   // Handler for .ready() called.
   		$.ajax({
 			  method: "GET",
-			  url: "http://128.199.78.95:8899/internetBest",
+			  url: "/internetBest",
 			})
 			  .done(function( msg ) {
 			   // alert( "Best: " + msg );
@@ -91,10 +91,9 @@
 
 			$("#restart").removeClass("invisible");
 			$.ajax({
-			  method: "POST",
-			  url: "http://128.199.78.95:8899/sendGame",
+			  method: "GET",
+			  url: "/sendGame?data=".concat(userInputs.toString()),
 			  contentType: 'application/json',
-			  data: { 'data': userInputs.toString() }
 			})
 			  .done(function( msg ) {
 			  	console.log("Game result saved hopefully");
