@@ -1,0 +1,101 @@
+<html>
+<head>
+	<meta name=viewport content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="prefixdc.css?ver=25">
+<!-- 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+</head>
+<div class="topseccontainer">
+	<div class="topsection" id="dummy">
+
+	</div>
+	<div class="topsection">
+		<div class="scorearea">
+			<div class="label">
+				Score
+			</div>
+			<div class="score" id="curScore">
+				0
+			</div>
+		</div>
+		<div class="timerarea">
+			<div class="time" id="time">
+				60
+			</div>
+			<div class="seconds" id="seconds">
+				Seconds Left
+			</div>
+		</div>
+	</div>
+	<div id="dummy2">
+	</div>
+</div>
+
+<div class="bottomsection">
+	<div class="instructions">
+		1. Press <color>left</color> or <color>right</color> arrow key to add the current number to the left or right green box respectively. <br><br>
+		2. Your score increases with the difference between green boxes <br><br>
+		3. Game ends if difference <color>exceeds 8</color> or if <color>time</color> ends<br><br>
+		
+		4. Start by pressing left or right arrow key.
+	</div>
+	<div class="gamearea" id="gamearea">
+		<div class="top">
+
+			<div class="leftbox" id="lbox">
+				<div class="ltext" id="ltext">
+					0
+				</div>
+				<div class='plus' id='plus'></div>
+			</div>
+			<div class="rightbox" id="rbox">
+				<div class="rtext" id="rtext">
+					0
+				</div>
+				<div class='plus' id='plus'></div>
+			</div>
+		</div>
+		<div class="middle" id="feedback">
+		
+		</div>
+
+		<div class="bottom">
+			<div class="current" id="cur">
+				2
+			</div>
+		</div>
+	</div>
+
+	<div class="stats">
+		<div class="userbest">
+			Your best: <div id="userbest"></div>
+		</div>
+		<div class="best">
+			Internet's best: <div id="best"></div>
+		</div>
+	</div>
+
+</div>
+
+<div class="exceeded8 invisible" id="exceeded8">
+	<div class="exceeded8text">
+		Game Over! (difference > 8)
+	</div>
+</div>
+
+<div class="timesup invisible" id="timesup">
+	<div class="timesuptext">
+		Game Over! (time up!)
+	</div>
+
+</div>
+
+<!-- Restart Footer -->
+<div class="footer invisible" id="restart">
+	Restart
+</div>
+
+<script src="dc.js">
+
+</script>

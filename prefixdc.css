@@ -1,0 +1,482 @@
+		body {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-flex-flow: column;
+			    -ms-flex-flow: column;
+			        flex-flow: column;
+			-webkit-box-pack: center;
+			-webkit-justify-content: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
+			-webkit-box-align: center;
+			-webkit-align-items: center;
+			    -ms-flex-align: center;
+			        align-items: center;
+			font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+			font-weight: bold;
+		}
+		.scorearea {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-flex-flow: row;
+			    -ms-flex-flow: row;
+			        flex-flow: row;
+			-webkit-box-pack: start;
+			-webkit-justify-content: flex-start;
+			    -ms-flex-pack: start;
+			        justify-content: flex-start;
+			-webkit-box-align: center;
+			-webkit-align-items: center;
+			    -ms-flex-align: center;
+			        align-items: center;
+		}
+		.label {
+			margin-right: 20px;
+		}
+		.score {
+			/* border: 2px solid green; */
+			padding: 10px;
+			text-align: center;
+			height: 40px;
+			width: 100px;
+			line-height: 40px;
+			color: white;
+			font-size: 18px;
+			background-color: rgb(199, 180, 83);
+		}
+		.gamearea {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-flex-flow: column;
+			    -ms-flex-flow: column;
+			        flex-flow: column;
+			border: 2px solid rgba(197, 175, 91, 1);
+			border-radius: 5px;
+			height: 400px;
+			width: 400px;
+			background: rgba(210, 173, 95, 1);
+		}
+		.gamearea>.top {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-flex-flow: row;
+			    -ms-flex-flow: row;
+			        flex-flow: row;
+			-webkit-justify-content: space-around;
+			    -ms-flex-pack: distribute;
+			        justify-content: space-around;
+			-webkit-box-flex: 1;
+			-webkit-flex: 1;
+			    -ms-flex: 1;
+			        flex: 1;
+		
+			margin-top: 20px;
+}
+
+		.gamearea>.top>.leftbox,  .gamearea>.top>.rightbox{
+			/*height: 100%;*/
+			height: 150px;
+			width: 150px;
+			border: 2px solid rgba(100, 255, 100, 0);
+			border-radius: 5px;
+			
+			font-size: 60px;
+		
+			background-color: rgb(133, 226, 177);
+			color: white;
+			position: relative;
+}
+		.gamearea>.middle {
+			-webkit-box-flex: 0.3;
+			-webkit-flex: 0.3;
+			    -ms-flex: 0.3;
+			        flex: 0.3;
+		}
+		.gamearea>.bottom {
+			-webkit-box-flex: 1;
+			-webkit-flex: 1;
+			    -ms-flex: 1;
+			        flex: 1;
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			-webkit-justify-content: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
+			-webkit-box-align: center;
+			-webkit-align-items: center;
+			    -ms-flex-align: center;
+			        align-items: center;
+		}
+		.gamearea>.bottom>.current {
+			height: 100px;
+			width: 100px;
+			text-align: center;
+			border: 10px solid black;
+			border-radius: 10px	;
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: center;
+			-webkit-align-items: center;
+			    -ms-flex-align: center;
+			        align-items: center;
+			-webkit-box-pack: center;
+			-webkit-justify-content: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
+			font-size: 40px;
+		
+			background-color: rgb(126, 99, 99);
+			color:  white;
+}
+		.exceeded8,.timesup {
+			background: rgba(0,0,0,0.5);
+			position: fixed;
+			height: 100%;
+			width: 100%;
+			top: 0px;
+			left: 0px;
+		}
+		.exceeded8text, .timesuptext {
+			position: relative;
+			top: 50%;
+			left: 50%;
+
+			color: white;
+		}
+		.invisible {
+			display: none;
+		}
+
+		.timearea {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-flex-flow: row;
+			    -ms-flex-flow: row;
+			        flex-flow: row;
+			-webkit-justify-content: space-around;
+			    -ms-flex-pack: distribute;
+			        justify-content: space-around;
+			-webkit-box-align: center;
+			-webkit-align-items: center;
+			    -ms-flex-align: center;
+			        align-items: center;
+		}
+		.time {
+			font-size: 30px;
+			margin-right: 10px;
+
+		}
+		.topsection {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-flex-flow: row;
+			    -ms-flex-flow: row;
+			        flex-flow: row;
+			-webkit-box-pack: justify;
+			-webkit-justify-content: space-between;
+			    -ms-flex-pack: justify;
+			        justify-content: space-between;
+			width: 400px;
+			/*border: 2px solid red;*/
+		}
+		
+		.plus {
+			position: absolute;
+			left: 0;
+			top: 70%;
+			font-size: 24px;
+			color: rgba(0,0,0,0);
+		}
+		#ltext, #rtext {
+			position: relative;
+			height: 150px;
+			width: 100%;
+			line-height: 150px;
+			text-align: center;
+
+		}
+
+
+		@-webkit-keyframes anim {
+			0% {color: white; top: 70%;}
+			100% {color: rgba(0,0,0,0); top: 0;}
+		}
+
+
+		@keyframes anim {
+			0% {color: white; top: 70%;}
+			100% {color: rgba(0,0,0,0); top: 0;}
+		}
+		.anim {
+			-webkit-animation : anim 1s;
+			        animation : anim 1s;
+		}
+
+		@-webkit-keyframes kaboom {
+			0% {width: 100px; height: 100px; font-size: 40px;}
+			50% {width: 105px; height: 105px; font-size: 44px;}
+			100% {width: 100px; height: 100px; font-size: 40px;}
+
+		}
+
+		@keyframes kaboom {
+			0% {width: 100px; height: 100px; font-size: 40px;}
+			50% {width: 105px; height: 105px; font-size: 44px;}
+			100% {width: 100px; height: 100px; font-size: 40px;}
+
+		}
+
+		.kaboom {
+			-webkit-animation: kaboom 0.1s;
+			        animation: kaboom 0.1s;
+		}
+
+		@-webkit-keyframes fontkaboom {
+			0% {font-size: 18px;}
+			50% {font-size: 24px;}
+			100% {font-size: 18px;}
+		}
+
+		@keyframes fontkaboom {
+			0% {font-size: 18px;}
+			50% {font-size: 24px;}
+			100% {font-size: 18px;}
+		}
+
+		.fontkaboom {
+			-webkit-animation: fontkaboom 0.1s;
+			        animation: fontkaboom 0.1s;
+		}
+		.middle {
+			font-size: 20px;
+			line-height: 40px;
+			height: 40px;
+			text-align: center;
+			color: rgba(0,0,0,0);
+		}
+
+		@-webkit-keyframes boomdissapear {
+			0% {font-size: 20px; color: rgba(255,255,255,1);}
+			50% {font-size: 26px; color: rgba(255,255,255,1);}
+			100% {font-size: 26px; color: rgba(255,255,255,0);}
+		}
+
+		@keyframes boomdissapear {
+			0% {font-size: 20px; color: rgba(255,255,255,1);}
+			50% {font-size: 26px; color: rgba(255,255,255,1);}
+			100% {font-size: 26px; color: rgba(255,255,255,0);}
+		}
+		.boomdissapear {
+			-webkit-animation: boomdissapear 0.5s;
+			        animation: boomdissapear 0.5s;
+		}
+
+		@-webkit-keyframes colordissapear {
+			0% {color: rgba(255,100,100,1);}
+			100% {color: white;}
+		}
+
+		@keyframes colordissapear {
+			0% {color: rgba(255,100,100,1);}
+			100% {color: white;}
+		}
+		.colordissapear {
+			-webkit-animation: colordissapear 0.5s;
+			        animation: colordissapear 0.5s;
+		}
+		.instructions {
+			width: 200px;
+			height: 400px;
+			padding: 5px;
+			/*border: 2px solid red;*/
+		}
+
+		.bottomsection, .topseccontainer {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-flex-flow: row;
+			    -ms-flex-flow: row;
+			        flex-flow: row;
+			-webkit-justify-content: space-around;
+			    -ms-flex-pack: distribute;
+			        justify-content: space-around;
+		}
+		#dummy {
+			width: 200px;
+		}
+
+		.footer {
+			background-color: orange;
+			height: 30px;
+			line-height: 30px;
+			padding: 10px;
+			color: white;
+			cursor: pointer;
+			position: fixed;
+			top: 60%;
+			left: 50%;
+		}
+		color {
+			color: rgba(255,100,100,1);
+		}
+		.stats {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-flex-flow: column;
+			    -ms-flex-flow: column;
+			        flex-flow: column;
+			padding: 5px;
+			width: 200px;
+
+		}
+		.userbest,.best {
+			padding: 5px;
+			width: 100%;
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-flex-flow: row;
+			    -ms-flex-flow: row;
+			        flex-flow: row;
+			height: 40px;
+			line-height: 40px;
+			color: white;
+			background-color: rgba(100,100,100,0.5);
+			text-align: center;
+			border-radius: 10px;
+			margin: 10px;
+		}
+		#userbest, #best {
+			margin-left: 5px;
+			min-width: 40px;
+		}
+
+		#dummy2, #dummy {
+			width: 200px;
+		}
+		@media screen and (max-width:800px) {
+			.stats {
+				-webkit-box-ordinal-group: 1;
+				-webkit-order: 0;
+				    -ms-flex-order: 0;
+				        order: 0;
+			}
+			#dummy {
+				display: none;
+			}
+			.bottomsection {
+				width: 80%;
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-flex-flow: column;
+				    -ms-flex-flow: column;
+				        flex-flow: column;
+				/*border: 1px solid red;*/
+			}
+			#dummy2 {
+				display: none;
+			}
+			.topseccontainer {
+				width: 80%;
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-pack: justify;
+				-webkit-justify-content: space-between;
+				    -ms-flex-pack: justify;
+				        justify-content: space-between;
+			}
+			.topsection {
+				/*width: 80%;*/
+				border: 0px;
+				overflow-x: hidden;
+			}
+			.instructions {
+				width: auto;
+				-webkit-box-ordinal-group: 3;
+				-webkit-order: 2;
+				    -ms-flex-order: 2;
+				        order: 2;
+				 /*width: 80%;*/
+			}
+			.gamearea {
+				width: auto;
+				height: 300px;
+				-webkit-box-ordinal-group: 2;
+				-webkit-order: 1;
+				    -ms-flex-order: 1;
+				        order: 1;
+				/*width: 80%;*/
+				overflow-x: hidden;
+			}
+
+			.gamearea>.top>.leftbox,  .gamearea>.top>.rightbox{
+				width: 100px;
+				height: 100px;
+			}
+			.topseccontainer {
+				width: 80%;
+				border: 0px;
+				margin: 0px;
+			}
+			#ltext, #rtext {
+				position: relative;
+				height: 100px;
+				width: 100%;
+				line-height: 100px;
+				text-align: center;
+
+			}
+			#seconds {
+				font-size: 12px;
+			}
+			.score {
+				/* border: 2px solid green; */
+				padding: 10px;
+				text-align: center;
+				height: 30px;
+				width: 60px;
+				line-height: 30px;
+				color: white;
+				font-size: 18px;
+				background-color: rgb(199, 180, 83);
+			}
+			body {
+				background-color: rgba(0,10,0,1);
+				color: white;
+			}
+			.exceeded8text, .timesuptext {
+				left: 0;
+			}
+
+			.footer {
+				
+				bottom: 0;
+				left: 40%;
+			}
+		}
