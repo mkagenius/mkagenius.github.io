@@ -448,8 +448,13 @@
 			}
 
 			.gamearea>.top>.leftbox,  .gamearea>.top>.rightbox{
-				width: 100px;
-				height: 100px;
+				width: 70px;
+				height: 70px;
+			}
+			#cur {
+				width: 70px ;
+				height: 70px ;
+
 			}
 			.topseccontainer {
 				width: 80%;
@@ -458,9 +463,9 @@
 			}
 			#ltext, #rtext {
 				position: relative;
-				height: 100px;
+				height: 70px;
 				width: 100%;
-				line-height: 100px;
+				line-height: 70px;
 				text-align: center;
 
 			}
@@ -488,8 +493,7 @@
 				left: 0;
 			}
 
-			.footer {
-				
+			.footer {				
 				bottom: 0;
 				left: 40%;
 			}
