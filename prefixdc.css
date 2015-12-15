@@ -4,16 +4,16 @@
 			display: -ms-flexbox;
 			display: flex;
 			-webkit-flex-flow: column;
-			    -ms-flex-flow: column;
-			        flex-flow: column;
+			-ms-flex-flow: column;
+			flex-flow: column;
 			-webkit-box-pack: center;
 			-webkit-justify-content: center;
-			    -ms-flex-pack: center;
-			        justify-content: center;
+			-ms-flex-pack: center;
+			justify-content: center;
 			-webkit-box-align: center;
 			-webkit-align-items: center;
-			    -ms-flex-align: center;
-			        align-items: center;
+			-ms-flex-align: center;
+			align-items: center;
 			font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
 			font-weight: bold;
 		}
@@ -48,7 +48,7 @@
 			font-size: 18px;
 			border-top-right-radius: 5px;
 			border-top-left-radius: 5px;
-			background-color: rgba(197, 175, 91, 1);
+			background-color: rgb(85, 104, 255);
 		}
 		.gamearea {
 			display: -webkit-box;
@@ -56,13 +56,13 @@
 			display: -ms-flexbox;
 			display: flex;
 			-webkit-flex-flow: column;
-			    -ms-flex-flow: column;
-			        flex-flow: column;
-			border: 2px solid rgba(197, 175, 91, 1);
-			border-radius: 5px;
+			-ms-flex-flow: column;
+			flex-flow: column;
+			border: 20px solid rgb(28, 175, 11);
+			border-radius: 4px;
 			height: 400px;
 			width: 400px;
-			background: rgba(197, 175, 91, 1);
+			background: rgb(54, 128, 88);
 		}
 		.gamearea>.top {
 			display: -webkit-box;
@@ -91,17 +91,13 @@
 		.gamearea>.top>.leftbox,  .gamearea>.top>.rightbox{
 			/*height: 100%;*/
 			height: 100px;
-
 			width: 100px;
 			border: 2px solid rgba(100, 255, 100, 0);
 			border-radius: 5px;
-			
 			font-size: 50px;
-		
-			background-color: rgb(133, 226, 177);
+			background-color: rgb(70, 177, 121);
 			color: white;
 			position: relative;
-
 		}
 		.gamearea>.middle {
 			-webkit-box-flex: 0.5;
@@ -134,23 +130,22 @@
 			height: 70px;
 			width: 70px;
 			text-align: center;
-			border: 10px solid black;
-			border-radius: 10px	;
+			border: 10px solid #FF5757;
+			border-radius: 100px;
 			display: -webkit-box;
 			display: -webkit-flex;
 			display: -ms-flexbox;
 			display: flex;
 			-webkit-box-align: center;
 			-webkit-align-items: center;
-			    -ms-flex-align: center;
-			        align-items: center;
+			-ms-flex-align: center;
+			align-items: center;
 			-webkit-box-pack: center;
 			-webkit-justify-content: center;
-			    -ms-flex-pack: center;
-			        justify-content: center;
+			-ms-flex-pack: center;
+			justify-content: center;
 			font-size: 40px;
-		
-			background-color: rgb(126, 99, 99);
+			background-color: rgb(255, 87, 87);
 			color:  white;
 }
 		.exceeded8,.timesup {
@@ -317,7 +312,9 @@
 			width: 200px;
 			height: 400px;
 			padding: 5px;
-			/*border: 2px solid red;*/
+			letter-spacing: 0.5;
+			font-weight: 400;
+			/* border: 2px solid red; */
 		}
 
 		.bottomsection, .topseccontainer {
@@ -337,7 +334,7 @@
 		}
 
 		.footer {
-			background-color: orange;
+			background-color: #FF0000;
 			height: 30px;
 			line-height: 30px;
 			padding: 10px;
@@ -346,6 +343,7 @@
 			position: fixed;
 			top: 60%;
 			left: 50%;
+			font-size: 25px;
 		}
 		color {
 			color: rgba(255,100,100,1);
@@ -364,18 +362,19 @@
 		}
 		.userbest,.best {
 			padding: 5px;
+			padding-left: 20px;
 			width: 100%;
 			display: -webkit-box;
 			display: -webkit-flex;
 			display: -ms-flexbox;
 			display: flex;
 			-webkit-flex-flow: row;
-			    -ms-flex-flow: row;
-			        flex-flow: row;
+			-ms-flex-flow: row;
+			flex-flow: row;
 			height: 40px;
 			line-height: 40px;
 			color: white;
-			background-color: rgba(100,100,100,0.5);
+			background-color: rgb(123, 123, 123);
 			text-align: center;
 			border-radius: 10px;
 			margin: 10px;
@@ -498,4 +497,5 @@
 				left: 40%;
 			}
 		}
+
 
