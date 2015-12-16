@@ -496,6 +496,10 @@
 				bottom: 0;
 				left: 40%;
 			}
+			.gamearea {
+				border:2px solid rgb(28, 175, 11)
+			}
 		}
+
 
 
