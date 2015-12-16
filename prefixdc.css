@@ -1,16 +1,13 @@
 		body {
-			display: -webkit-box;
 			display: -webkit-flex;
 			display: -ms-flexbox;
 			display: flex;
 			-webkit-flex-flow: column;
 			-ms-flex-flow: column;
 			flex-flow: column;
-			-webkit-box-pack: center;
 			-webkit-justify-content: center;
 			-ms-flex-pack: center;
 			justify-content: center;
-			-webkit-box-align: center;
 			-webkit-align-items: center;
 			-ms-flex-align: center;
 			align-items: center;
@@ -18,21 +15,18 @@
 			font-weight: bold;
 		}
 		.scorearea {
-			display: -webkit-box;
 			display: -webkit-flex;
 			display: -ms-flexbox;
 			display: flex;
 			-webkit-flex-flow: row;
 			    -ms-flex-flow: row;
 			        flex-flow: row;
-			-webkit-box-pack: start;
 			-webkit-justify-content: flex-start;
-			    -ms-flex-pack: start;
-			        justify-content: flex-start;
-			-webkit-box-align: center;
+			-ms-flex-pack: start;
+			    justify-content: flex-start;
 			-webkit-align-items: center;
-			    -ms-flex-align: center;
-			        align-items: center;
+			-ms-flex-align: center;
+			    align-items: center;
 		}
 		.label {
 			margin-right: 20px;
@@ -51,7 +45,6 @@
 			background-color: rgb(85, 104, 255);
 		}
 		.gamearea {
-			display: -webkit-box;
 			display: -webkit-flex;
 			display: -ms-flexbox;
 			display: flex;
@@ -65,7 +58,6 @@
 			background: rgb(54, 128, 88);
 		}
 		.gamearea>.top {
-			display: -webkit-box;
 			display: -webkit-flex;
 			display: -ms-flexbox;
 			display: flex;
@@ -75,10 +67,9 @@
 			-webkit-justify-content: space-around;
 			    -ms-flex-pack: distribute;
 			        justify-content: space-around;
-			-webkit-box-flex: 1;
 			-webkit-flex: 1;
-			    -ms-flex: 1;
-			        flex: 1;
+			-ms-flex: 1;
+			    flex: 1;
 			 align-items: center;
 		 -webkit-box-align: center;
 		-webkit-align-items: center;
@@ -98,30 +89,27 @@
 			background-color: rgb(70, 177, 121);
 			color: white;
 			position: relative;
+			box-shadow: -1px 9px 24px 2px rgba(0,0,0,0.75);
 		}
 		.gamearea>.middle {
-			-webkit-box-flex: 0.5;
 			-webkit-flex: 0.5;
-			    -ms-flex: 0.5;
-			        flex: 0.5;
+			-ms-flex: 0.5;
+			    flex: 0.5;
 		}
 		.gamearea>.top>.bottom {
 			/*-webkit-box-flex: 1;
 			-webkit-flex: 1;
 			    -ms-flex: 1;
 			        flex: 1;*/
-			display: -webkit-box;
 			display: -webkit-flex;
 			display: -ms-flexbox;
 			display: flex;
-			-webkit-box-pack: center;
 			-webkit-justify-content: center;
-			    -ms-flex-pack: center;
-			        justify-content: center;
-			-webkit-box-align: center;
+			-ms-flex-pack: center;
+			    justify-content: center;
 			-webkit-align-items: center;
-			    -ms-flex-align: center;
-			        align-items: center;
+			-ms-flex-align: center;
+			    align-items: center;
 			/*border: 1px solid red;*/
 			height: 100px;
 			width: 100px;
@@ -132,21 +120,19 @@
 			text-align: center;
 			border: 10px solid #FF5757;
 			border-radius: 100px;
-			display: -webkit-box;
 			display: -webkit-flex;
 			display: -ms-flexbox;
 			display: flex;
-			-webkit-box-align: center;
 			-webkit-align-items: center;
 			-ms-flex-align: center;
 			align-items: center;
-			-webkit-box-pack: center;
 			-webkit-justify-content: center;
 			-ms-flex-pack: center;
 			justify-content: center;
 			font-size: 40px;
 			background-color: rgb(255, 87, 87);
 			color:  white;
+			box-shadow: -1px 9px 24px 2px rgba(0,0,0,0.75);
 }
 		.exceeded8,.timesup {
 			background: rgba(0,0,0,0.5);
@@ -168,7 +154,6 @@
 		}
 
 		.timearea {
-			display: -webkit-box;
 			display: -webkit-flex;
 			display: -ms-flexbox;
 			display: flex;
@@ -178,10 +163,9 @@
 			-webkit-justify-content: space-around;
 			    -ms-flex-pack: distribute;
 			        justify-content: space-around;
-			-webkit-box-align: center;
 			-webkit-align-items: center;
-			    -ms-flex-align: center;
-			        align-items: center;
+			-ms-flex-align: center;
+			    align-items: center;
 		}
 		.time {
 			font-size: 30px;
@@ -189,17 +173,15 @@
 
 		}
 		.topsection {
-			display: -webkit-box;
 			display: -webkit-flex;
 			display: -ms-flexbox;
 			display: flex;
 			-webkit-flex-flow: row;
 			    -ms-flex-flow: row;
 			        flex-flow: row;
-			-webkit-box-pack: justify;
 			-webkit-justify-content: space-between;
-			    -ms-flex-pack: justify;
-			        justify-content: space-between;
+			-ms-flex-pack: justify;
+			    justify-content: space-between;
 			width: 400px;
 			/*border: 2px solid red;*/
 		}
@@ -318,7 +300,6 @@
 		}
 
 		.bottomsection, .topseccontainer {
-			display: -webkit-box;
 			display: -webkit-flex;
 			display: -ms-flexbox;
 			display: flex;
@@ -349,7 +330,6 @@
 			color: rgba(255,100,100,1);
 		}
 		.stats {
-			display: -webkit-box;
 			display: -webkit-flex;
 			display: -ms-flexbox;
 			display: flex;
@@ -364,7 +344,6 @@
 			padding: 5px;
 			padding-left: 20px;
 			width: 100%;
-			display: -webkit-box;
 			display: -webkit-flex;
 			display: -ms-flexbox;
 			display: flex;
@@ -378,6 +357,7 @@
 			text-align: center;
 			border-radius: 10px;
 			margin: 10px;
+			box-shadow: -1px 9px 24px 2px rgba(0,0,0,0.75);
 		}
 		#userbest, #best {
 			margin-left: 5px;
@@ -389,17 +369,15 @@
 		}
 		@media screen and (max-width:800px) {
 			.stats {
-				-webkit-box-ordinal-group: 3;
 				-webkit-order: 2;
-				    -ms-flex-order: 2;
-				        order: 2;
+				-ms-flex-order: 2;
+				    order: 2;
 			}
 			#dummy {
 				display: none;
 			}
 			.bottomsection {
 				width: 80%;
-				display: -webkit-box;
 				display: -webkit-flex;
 				display: -ms-flexbox;
 				display: flex;
@@ -413,14 +391,12 @@
 			}
 			.topseccontainer {
 				width: 80%;
-				display: -webkit-box;
 				display: -webkit-flex;
 				display: -ms-flexbox;
 				display: flex;
-				-webkit-box-pack: justify;
 				-webkit-justify-content: space-between;
-				    -ms-flex-pack: justify;
-				        justify-content: space-between;
+				-ms-flex-pack: justify;
+				    justify-content: space-between;
 			}
 			.topsection {
 				/*width: 80%;*/
@@ -429,19 +405,17 @@
 			}
 			.instructions {
 				width: auto;
-				-webkit-box-ordinal-group: 4;
 				-webkit-order: 3;
-				    -ms-flex-order: 3;
-				        order: 3;
+				-ms-flex-order: 3;
+				    order: 3;
 				 /*width: 80%;*/
 			}
 			.gamearea {
 				width: auto;
 				height: 300px;
-				-webkit-box-ordinal-group: 2;
 				-webkit-order: 1;
-				    -ms-flex-order: 1;
-				        order: 1;
+				-ms-flex-order: 1;
+				    order: 1;
 				/*width: 80%;*/
 				overflow-x: hidden;
 			}
