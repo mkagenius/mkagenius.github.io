@@ -35,6 +35,7 @@ body {
 			font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
 			color: #647f94d4;
 			background: #02000008;
+			background: white;
 			/* margin: 10px; */
 			/* font-weight: bold; */
 		}
@@ -56,6 +57,8 @@ body {
 		}
 		.label {
 			margin-right: 20px;
+			font-size: 12px;
+			margin-top: 7px;
 			color: #637f9470;
 		}
 		.score {
@@ -200,7 +203,7 @@ body {
 		}
 		.time {
 			font-size: 32px;
-            color: #607d8b99;
+			color: #607d8b99;
 			/* margin-right: 10px; */
 		}
 		.topsection {
@@ -390,7 +393,7 @@ body {
 			height: 40px;
 			line-height: 40px;
 			margin-top: 8px;
-			color: #607D8B;
+			/* color: #607D8B; */
 			background-color: rgb(255, 255, 255);
 			text-align: center;
 			border-radius: 10px;
@@ -413,6 +416,7 @@ body {
 			margin-left: 5px;
 			min-width: 40px;
 			font-size: 24px;
+			/* background: white; */
 			text-align: center;
 		}
 
@@ -498,18 +502,16 @@ body {
 				font-size: 12px;
 			}
 			.score {
-				
 				/* border: 2px solid green; */
-				padding: 10px;
+				/* padding: 10px; */
 				text-align: center;
 				height: 30px;
 				width: 60px;
-				line-height: 30px;
-			
-				font-size: 18px;
+				/* line-height: 30px; */
+				font-size: 40px;
 				border-top-right-radius: 5px;
 				border-top-left-radius: 5px;
-				background-color: rgba(197, 175, 91, 1);
+				/* background-color: rgba(197, 175, 91, 1); */
 			}
 			body {
 				background-color: rgba(0,10,0,1);
@@ -524,13 +526,9 @@ body {
 				left: 40%;
 			}
 			.gamearea {
-				border:2px solid rgb(28, 175, 11)
+				/* border:2px solid rgb(28, 175, 11); */
 			}
 		}
-
-
-
-
 
 
 
