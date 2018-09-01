@@ -1,48 +1,76 @@
-		body {
+div#seconds {
+    color: #607d8b5e;
+}
+
+div#yourbestext {
+    font-size: 22;
+}
+
+img {
+    margin-right: 2px;
+    /* margin-top: -20px; */
+}
+h1 {
+    color: white;
+    letter-spacing: 7px;
+    text-shadow: 1px 1px 10px #607D8B;
+}
+
+		
+body {
 			display: -webkit-flex;
 			display: -ms-flexbox;
 			display: flex;
 			-webkit-flex-flow: column;
 			-ms-flex-flow: column;
+			text-align: right;
 			flex-flow: column;
 			-webkit-justify-content: center;
 			-ms-flex-pack: center;
+			align-text: right;
 			justify-content: center;
 			-webkit-align-items: center;
 			-ms-flex-align: center;
 			align-items: center;
 			font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
-			font-weight: bold;
+			color: #647f94d4;
+			background: #02000008;
+			/* margin: 10px; */
+			/* font-weight: bold; */
 		}
 		.scorearea {
-			display: -webkit-flex;
+			/* display: -webkit-flex; */
 			display: -ms-flexbox;
-			display: flex;
+			/* display: flex; */
 			-webkit-flex-flow: row;
-			    -ms-flex-flow: row;
-			        flex-flow: row;
+			margin-bottom: 8px;
+			margin-left: 8px;
+			-ms-flex-flow: row;
+			/* flex-flow: column; */
 			-webkit-justify-content: flex-start;
 			-ms-flex-pack: start;
-			    justify-content: flex-start;
+			justify-content: flex-start;
 			-webkit-align-items: center;
 			-ms-flex-align: center;
-			    align-items: center;
+			align-items: center;
 		}
 		.label {
 			margin-right: 20px;
+			color: #637f9470;
 		}
 		.score {
 			/* border: 2px solid green; */
-			padding: 10px;
-			text-align: center;
+			/* padding: 10px; */
+			/* text-align: center; */
 			height: 40px;
-			width: 100px;
+			text-align: left;
+			/* width: 100px; */
 			line-height: 40px;
-			color: white;
-			font-size: 18px;
-			border-top-right-radius: 5px;
-			border-top-left-radius: 5px;
-			background-color: rgb(85, 104, 255);
+			color: #607d8b99;
+			font-size: 32px;
+			/* border-top-right-radius: 5px; */
+			/* border-top-left-radius: 5px; */
+			/* background-color: rgb(85, 104, 255); */
 		}
 		.gamearea {
 			display: -webkit-flex;
@@ -51,31 +79,34 @@
 			-webkit-flex-flow: column;
 			-ms-flex-flow: column;
 			flex-flow: column;
-			border: 20px solid rgb(28, 175, 11);
-			border-radius: 4px;
+			/* border: 20px solid rgb(28, 175, 11); */
+			border-: 4px;
 			height: 400px;
 			width: 400px;
-			background: rgb(54, 128, 88);
+			background: white;
+			border-radius: 4px;
+			/* background: linear-gradient(45deg, #e7f1f9, white, #e7f1f9); */
+			box-shadow: 2px 2px 20px 7px #607d8b0f;
 		}
 		.gamearea>.top {
 			display: -webkit-flex;
 			display: -ms-flexbox;
 			display: flex;
 			-webkit-flex-flow: row;
-			    -ms-flex-flow: row;
-			        flex-flow: row;
+			-ms-flex-flow: row;
+			flex-flow: row;
 			-webkit-justify-content: space-around;
-			    -ms-flex-pack: distribute;
-			        justify-content: space-around;
+			-ms-flex-pack: distribute;
+			justify-content: space-around;
 			-webkit-flex: 1;
 			-ms-flex: 1;
-			    flex: 1;
-			 align-items: center;
-		 -webkit-box-align: center;
-		-webkit-align-items: center;
-		    -ms-flex-align: center;
-		
-			margin-top: 20px;
+			flex: 1;
+			align-items: center;
+			-webkit-box-align: center;
+			-webkit-align-items: center;
+			-ms-flex-align: center;
+			/* background: linear-gradient(45deg, #3d9eec, white, #ffffff); */
+			margin-top: 84px;
 			/*border: 1px solid black;*/
 		}
 
@@ -83,13 +114,13 @@
 			/*height: 100%;*/
 			height: 100px;
 			width: 100px;
-			border: 2px solid rgba(100, 255, 100, 0);
+			border: 2px solid #607d8bc4;
 			border-radius: 5px;
 			font-size: 50px;
-			background-color: rgb(70, 177, 121);
-			color: white;
+			/* background-color: rgb(70, 177, 121); */
+			color: #647f94c2;
 			position: relative;
-			box-shadow: -1px 9px 24px 2px rgba(0,0,0,0.75);
+			/* box-shadow: -1px 1px 24px 0px rgba(0,0,0,0.75); */
 		}
 		.gamearea>.middle {
 			-webkit-flex: 0.5;
@@ -118,7 +149,7 @@
 			height: 70px;
 			width: 70px;
 			text-align: center;
-			border: 10px solid #FF5757;
+			border: 2px solid #607d8bc9;
 			border-radius: 100px;
 			display: -webkit-flex;
 			display: -ms-flexbox;
@@ -130,9 +161,9 @@
 			-ms-flex-pack: center;
 			justify-content: center;
 			font-size: 40px;
-			background-color: rgb(255, 87, 87);
-			color:  white;
-			box-shadow: -1px 9px 24px 2px rgba(0,0,0,0.75);
+			/* background-color: rgb(255, 87, 87); */
+			color: #607d8bd6;
+			/* box-shadow: -1px 9px 24px 2px rgba(0,0,0,0.75); */
 }
 		.exceeded8,.timesup {
 			background: rgba(0,0,0,0.5);
@@ -168,9 +199,9 @@
 			    align-items: center;
 		}
 		.time {
-			font-size: 30px;
-			margin-right: 10px;
-
+			font-size: 32px;
+            color: #607d8b99;
+			/* margin-right: 10px; */
 		}
 		.topsection {
 			display: -webkit-flex;
@@ -204,13 +235,13 @@
 
 
 		@-webkit-keyframes anim {
-			0% {color: white; top: 70%;}
+			0% {color: #647f94; top: 70%;}
 			100% {color: rgba(0,0,0,0); top: 0;}
 		}
 
 
 		@keyframes anim {
-			0% {color: white; top: 70%;}
+			0% {color: #647f94; top: 70%;}
 			100% {color: rgba(0,0,0,0); top: 0;}
 		}
 		.anim {
@@ -244,9 +275,9 @@
 		}
 
 		@keyframes fontkaboom {
-			0% {font-size: 18px;}
-			50% {font-size: 24px;}
-			100% {font-size: 18px;}
+			0% {font-size: 24px;}
+			50% {font-size: 26px;}
+			100% {font-size: 28px;}
 		}
 
 		.fontkaboom {
@@ -257,7 +288,10 @@
 			font-size: 20px;
 			line-height: 40px;
 			height: 40px;
+			width: 30%;
 			text-align: center;
+			border-radius: 4px;
+			background: linear-gradient(45deg, #3d9eec, white, #ffffff);
 			color: rgba(0,0,0,0);
 		}
 
@@ -284,7 +318,8 @@
 
 		@keyframes colordissapear {
 			0% {color: rgba(255,100,100,1);}
-			100% {color: white;}
+			100% {/* color: #607D8B; */background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet); 			-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Standard syntax (must be last) */}
 		}
 		.colordissapear {
 			-webkit-animation: colordissapear 0.5s;
@@ -294,9 +329,9 @@
 			width: 200px;
 			height: 400px;
 			padding: 5px;
+			margin-right: 32px;
 			letter-spacing: 0.5;
-			font-weight: 400;
-			/* border: 2px solid red; */
+			font-family: sans-serif;
 		}
 
 		.bottomsection, .topseccontainer {
@@ -332,17 +367,19 @@
 		.stats {
 			display: -webkit-flex;
 			display: -ms-flexbox;
+			/* padding-left: 21px; */
 			display: flex;
 			-webkit-flex-flow: column;
-			    -ms-flex-flow: column;
-			        flex-flow: column;
-			padding: 5px;
+			-ms-flex-flow: column;
+			flex-flow: column;
+			/* justify-content: center; */
+			padding: 16px;
 			width: 200px;
-
 		}
 		.userbest,.best {
-			padding: 5px;
-			padding-left: 20px;
+			/* padding: 5px; */
+			padding-top: 5px;
+			padding-bottom: 5px;
 			width: 100%;
 			display: -webkit-flex;
 			display: -ms-flexbox;
@@ -352,16 +389,31 @@
 			flex-flow: row;
 			height: 40px;
 			line-height: 40px;
-			color: white;
-			background-color: rgb(123, 123, 123);
+			margin-top: 8px;
+			color: #607D8B;
+			background-color: rgb(255, 255, 255);
 			text-align: center;
 			border-radius: 10px;
-			margin: 10px;
-			box-shadow: -1px 9px 24px 2px rgba(0,0,0,0.75);
+			/* margin: 10px; */
+			border: 1px solid;
+			/* border-color: red; */
+			justify-content: center;
+			/* border-right: 2px; */
+			text-align: center;
+			border-color: #607d8b3b;
+			background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+			background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+			background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+			background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+			-webkit-background-clip: text;
+			/* -webkit-text-fill-color: transparent; */
+			/* box-shadow: -1px 9px 24px 2px rgba(0,0,0,0.75); */
 		}
 		#userbest, #best {
 			margin-left: 5px;
 			min-width: 40px;
+			font-size: 24px;
+			text-align: center;
 		}
 
 		#dummy2, #dummy {
@@ -446,13 +498,14 @@
 				font-size: 12px;
 			}
 			.score {
+				
 				/* border: 2px solid green; */
 				padding: 10px;
 				text-align: center;
 				height: 30px;
 				width: 60px;
 				line-height: 30px;
-				color: white;
+			
 				font-size: 18px;
 				border-top-right-radius: 5px;
 				border-top-left-radius: 5px;
@@ -474,6 +527,10 @@
 				border:2px solid rgb(28, 175, 11)
 			}
 		}
+
+
+
+
 
 
 

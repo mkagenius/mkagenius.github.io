@@ -1,9 +1,9 @@
 <html>
-<title> Diff Collector Game </title>
+<title> Eight - Diff Collector Game </title>
 <head>
 	<meta name=viewport content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="prefixdc.css?ver=27">
+	<link rel="stylesheet" type="text/css" href="prefixdc.css?ver=30">
 	<meta property="og:image" content="http://mkagenius.github.io/gameimage.png" />
 <!-- 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
@@ -18,17 +18,18 @@
 
 </script>
 </head>
+<center> <h1> Eight! </h1> </center>
 <div class="topseccontainer">
 	<div class="topsection" id="dummy">
 
 	</div>
 	<div class="topsection">
 		<div class="scorearea">
+			 <div class="score" id="curScore">
+                0
+            </div>
 			<div class="label">
-				Score
-			</div>
-			<div class="score" id="curScore">
-				0
+				SCORE
 			</div>
 		</div>
 		<div class="timerarea">
@@ -36,7 +37,7 @@
 				60
 			</div>
 			<div class="seconds" id="seconds">
-				Seconds Left
+				TIME
 			</div>
 		</div>
 	</div>
@@ -84,11 +85,9 @@
 	</div>
 
 	<div class="stats">
+		<div id="yourbestext"><img src="Trophy.png" height='16px' width='auto'></img>Your best</div>
 		<div class="userbest">
-			Your best: <div id="userbest"></div>
-		</div>
-		<div class="best">
-			Internet's best: <div id="best"></div>
+			<div id="userbest"></div>
 		</div>
 	</div>
 
