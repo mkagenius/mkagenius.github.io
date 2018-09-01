@@ -296,14 +296,14 @@ body {
 		}
 
 		@-webkit-keyframes boomdissapear {
-			0% {font-size: 20px; color: rgba(255,255,255,1);}
-			50% {font-size: 26px; color: rgba(255,255,255,1);}
+			0% {font-size: 20px; color: #607D8B;}
+			50% {font-size: 26px; color: #607D8B;}
 			100% {font-size: 26px; color: rgba(255,255,255,0);}
 		}
 
 		@keyframes boomdissapear {
-			0% {font-size: 20px; color: rgba(255,255,255,1);}
-			50% {font-size: 26px; color: rgba(255,255,255,1);}
+			0% {font-size: 20px; color: #607D8B;}
+			50% {font-size: 26px; color: #607D8B;}
 			100% {font-size: 26px; color: rgba(255,255,255,0);}
 		}
 		.boomdissapear {
