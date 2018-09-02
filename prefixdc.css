@@ -524,7 +524,8 @@ body {
 				left: 0;
 			}
 
-			.footer {				
+			.footer {	
+				font-size: 22px;			
 				bottom: 0;
 				left: 40%;
 			}
