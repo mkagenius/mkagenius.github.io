@@ -4,6 +4,7 @@ div#seconds {
 
 div#yourbestext {
     font-size: 22;
+    font-family: 'Open Sans', sans-serif;
 }
 
 img {
@@ -14,6 +15,7 @@ h1 {
     color: white;
     letter-spacing: 7px;
     text-shadow: 1px 1px 10px #607D8B;
+    font-family: 'Open Sans', sans-serif;
 }
 
 		
@@ -121,9 +123,7 @@ body {
 			border-radius: 5px;
 			font-size: 50px;
 			/* background-color: rgb(70, 177, 121); */
-			color: #647f94c2;
-			position: relative;
-			/* box-shadow: -1px 1px 24px 0px rgba(0,0,0,0.75); */
+			/* font-family: 'Open Sans', sans-serif; */
 		}
 		.gamearea>.middle {
 			-webkit-flex: 0.5;
@@ -334,7 +334,7 @@ body {
 			padding: 5px;
 			margin-right: 32px;
 			letter-spacing: 0.5;
-			font-family: sans-serif;
+			font-family: 'Open Sans', sans-serif;
 		}
 
 		.bottomsection, .topseccontainer {
@@ -533,6 +533,7 @@ body {
 				/* border:2px solid rgb(28, 175, 11); */
 			}
 		}
+
 
 
 
