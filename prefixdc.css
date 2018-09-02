@@ -513,10 +513,7 @@ body {
 				border-top-left-radius: 5px;
 				/* background-color: rgba(197, 175, 91, 1); */
 			}
-			body {
-				background-color: rgba(0,10,0,1);
-				color: white;
-			}
+		
 			.exceeded8text, .timesuptext {
 				left: 0;
 			}
