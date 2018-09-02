@@ -57,8 +57,8 @@ body {
 		}
 		.label {
 			margin-right: 20px;
-			font-size: 12px;
-			margin-top: 7px;
+			font-size: 16px;
+			/*margin-top: 7px;*/
 			color: #637f9470;
 		}
 		.score {
@@ -424,6 +424,10 @@ body {
 			width: 200px;
 		}
 		@media screen and (max-width:800px) {
+			.label { 
+				font-size:12px;
+				margin-top: 7px;
+			}
 			.stats {
 				-webkit-order: 2;
 				-ms-flex-order: 2;
@@ -504,7 +508,7 @@ body {
 			.score {
 				/* border: 2px solid green; */
 				/* padding: 10px; */
-				text-align: center;
+				text-align: left;
 				height: 30px;
 				width: 60px;
 				/* line-height: 30px; */
@@ -513,7 +517,9 @@ body {
 				border-top-left-radius: 5px;
 				/* background-color: rgba(197, 175, 91, 1); */
 			}
-		
+			div#yourbestext {
+				text-align: left;
+			}	
 			.exceeded8text, .timesuptext {
 				left: 0;
 			}
